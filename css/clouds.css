@@ -1,0 +1,125 @@
+/* ====== CLOUDS ====== */
+.clouds-wrap {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+.x1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-animation: moveClouds 30s linear infinite;
+          animation: moveClouds 30s linear infinite;
+}
+
+.x1 .clouds {
+  margin-left: 8rem;
+}
+
+.x2 {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-animation: moveClouds 40s linear infinite;
+          animation: moveClouds 40s linear infinite;
+}
+
+.x3 {
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: moveClouds 60s linear infinite;
+          animation: moveClouds 60s linear infinite;
+}
+
+.x4 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-animation: moveClouds 30s linear infinite;
+          animation: moveClouds 30s linear infinite;
+}
+
+.x4 .clouds {
+  margin-left: 20rem;
+}
+
+.x5 {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-animation: moveClouds 30s linear infinite;
+          animation: moveClouds 30s linear infinite;
+}
+
+.x6 {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-animation: moveClouds 50s linear infinite;
+          animation: moveClouds 50s linear infinite;
+}
+
+.clouds {
+  opacity: 0.4;
+  width: 340px;
+  height: 100px;
+  margin-top: 16px;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  position: relative;
+  border-radius: 100px;
+  background: #ffffff;
+  border-bottom: 8px solid #eeeeee;
+  -webkit-box-shadow: 0 10px 6px #0000002a;
+          box-shadow: 0 10px 6px #0000002a;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, white), to(#f1f1f1));
+  background: linear-gradient(top, white 6%, #f1f1f1 100%);
+}
+
+.clouds::before, .clouds::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background: #ffffff;
+}
+
+.clouds::before {
+  top: -90px;
+  right: 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 200px;
+}
+
+.clouds::after {
+  left: 50px;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+/* ====== ANIMATION ====== */
+@-webkit-keyframes moveClouds {
+  to {
+    margin-left: -100%;
+  }
+  from {
+    margin-left: 100%;
+  }
+}
+@keyframes moveClouds {
+  to {
+    margin-left: -100%;
+  }
+  from {
+    margin-left: 100%;
+  }
+}
+/*# sourceMappingURL=clouds.css.map */

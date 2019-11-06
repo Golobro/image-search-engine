@@ -1,0 +1,27 @@
+:root {
+  --colors: linear-gradient(120deg,
+    palegreen, 
+    skyblue,
+    thistle,
+    aqua
+    );
+}
+
+@-webkit-keyframes animateBG {
+  to {
+    background-position: left;
+  }
+  from {
+    background-position: right;
+  }
+}
+
+@keyframes animateBG {
+  to {
+    background-position: left;
+  }
+  from {
+    background-position: right;
+  }
+}
+/*# sourceMappingURL=animate.css.map */
