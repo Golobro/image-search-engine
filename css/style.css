@@ -229,6 +229,9 @@ footer a:hover {
 
 /* ====== RESPONSIVE ====== */
 @media screen and (max-width: 768px) {
+  .container{
+    padding: 0 .6rem .6rem;
+  }
   .render-image-wrap {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -236,6 +239,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .container{
+    padding: 0 .4rem .4rem;
+  }
   .render-image-wrap {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
